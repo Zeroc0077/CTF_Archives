@@ -1,8 +1,0 @@
-version: "2"
-services:
-  web:
-    build: .
-    image: catcat
-    restart: always
-    ports:
-      - "8096:5637"
