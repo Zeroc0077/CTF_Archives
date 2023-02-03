@@ -1,0 +1,13 @@
+version: '2.3'
+services:
+  web:
+    image: openjdk:8-jre
+    restart: always
+    pids_limit: 12315
+    ports: 
+      - "32770:8080"
+    volumes:
+      - ./web-0.0.1-SNAPSHOT.jar:/web-0.0.1-SNAPSHOT.jar
+      - ./flag_AQUA:/flag_AQUA
+    user: nobody
+    command: java -Djava.security.egd=file:/dev/./urandom -jar /web-0.0.1-SNAPSHOT.jar
