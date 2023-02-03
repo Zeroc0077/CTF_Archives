@@ -1,0 +1,70 @@
+
+
+ 
+* {
+  -ms-overflow-style: none;}
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;}
+
+
+*::-webkit-scrollbar {
+  width: 0;}
+
+
+*::-webkit-scrollbar-track {
+  background: transparent;}
+
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;}
+
+
+
+
+
+
+/*This rules targets the conatiner for the entire Carousel*/
+.carousel {
+  position: relative;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;}
+  
+ 
+.carousel-wrapper{
+	overflow: visible!important;
+	/* border: none!important; */
+	border-block-start-color: transparent;}
+	
+
+
+
+
+
+
+
+
+
+/**** Carousel Images****/
+
+.carousel-item{background-repeat: no-repeat;background-position: center top;
+/*background-size: 100vw 32.5vh!important;*/
+background-color: lightgrey;
+height: 200px;
+ font-size: 24px;
+  color: black;
+  white-space: nowrap;}
+
+.carousel-control-prev,.carousel-control-next{
+  /*background-color: green!important;*/
+  z-index: 3!important;
+}
+
+.carousel-text{position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);}
+

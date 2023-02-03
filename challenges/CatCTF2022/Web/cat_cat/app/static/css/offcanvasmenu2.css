@@ -1,0 +1,152 @@
+
+/*This rule set configures the size dimensions of the off canvas menu;
+Configures  it movement "off-screen" when the Hamburger Icon is clicked */
+#menu
+{position: absolute;
+  width: 10em;
+  left: 70px;
+  top: -16px;
+  height: 245px;
+  box-shadow: 0 0 4.16vw #85888C;
+  padding-left: 10px;
+  padding-right: 0px;
+  padding-top: 25.5px;
+  padding-bottom: 51px;
+  background-color: #F5F6FA;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  /*This declaration initially pushes the menu leftward so that it appears "offscreen"*/
+  transform: translate(10%, 0);
+  /*This declaration is responsible for the menu swiftly sliding into view as oppose to just rapidly materializing when the icon is clicked*/
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  font-size: 15px;
+  }
+
+
+
+/*conatiner for the Hamburger Icon*/
+#menuToggle{
+  z-index:9;
+  width: 60px;
+  height: 45px;
+  position: absolute;
+  top: -35px;
+  right: -20px;
+  margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;}
+
+
+
+/*The the three horizontal lines comprising the Hamburger Icon*/
+#menuToggle span{
+  z-index: 7;
+  display: block;
+  position: absolute;
+  height: 3.5px;
+  width: 50%;
+  background: rgb(154, 188, 49);
+  border-radius: 7px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;}
+
+
+
+
+/*Vertical spacing between the hroizontal lines of the Hamburger Icon*/
+#menuToggle span:nth-child(1) {
+  top: 0px;}
+
+#menuToggle span:nth-child(2) {
+  top: 8px;}
+
+#menuToggle span:nth-child(3) {
+  top: 16px;}
+
+
+
+/*the animation that rearranges the Hamburger Icon into a close button*/
+#menuToggle.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);}
+
+
+#menuToggle.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;}
+
+
+#menuToggle.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);}
+
+#menuToggle.open{
+  top:-45px;
+  z-index: 10;}
+
+/*The list of links in the Off canvas menu*/
+#menu li
+  {
+  transition-delay: 2s;
+  position: relative;
+  /*left: 10%;
+  width: 70%;*/
+  left: 15px;
+  width: 105px;
+  border-color: black;
+  border-style: solid;
+  border-width: 0px;
+  line-height: 40px;}
+
+
+/*This rule set is responsible format bringing the off-canvas menu 
+into view when the Hamburger Icon is clicked on*/
+
+#menuToggle.open ul
+{transform: none;
+  transform: translate(-127%, 0);}
+  
+
+
+  @media only screen and (min-height: 430px){
+    #menu{height: 260px;}
+
+    #menu li{ line-height: 45px;}
+  }
+
+
+  @media only screen and (min-width: 450px){
+    #menu{width: 180px;}
+
+    #menu li{ left: 25px;}
+
+    #menuToggle.open ul
+{transform: none;
+  transform: translate(-119%, 0);}
+  
+  }
+
+  @media only screen and (min-width: 600px){
+    #menuToggle{display: none;}
+  }

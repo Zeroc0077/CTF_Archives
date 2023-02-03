@@ -1,0 +1,434 @@
+
+/*Company name*/
+.site-logo a{
+    position: relative;
+    left: 7%;
+    z-index: 5;
+    display: block;
+    color: white;
+    font-size: calc(.5em + 1.3vw);
+    height: 40px;
+    top: 10px;
+    border-width: 1px;
+    width: 100%;}
+
+
+
+
+
+/*Container for the call to action bar*/
+#main-nav-menu {
+    position: fixed;
+    bottom: 0px;
+    z-index: 6;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    height: 70px;
+    width: 100%;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;}
+    
+
+
+ /* Flex Container for the call to action bar. The row consists of the four
+     icon/caption pairs
+     */
+	#call-to-action-bar{
+	list-style: none;
+    position: relative;
+    right: 8`px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;}
+
+/*call-to action bar's secondary child flex containers. Here, each list item within <ul id="call-to-action-bar"> is an 
+ individual flex container, with the corresponding icon and caption as the flex items*/
+
+ #call-to-action-bar li{
+ 	display: flex;
+ 	flex-direction: column;
+ 	flex: 1;
+ 	}
+
+
+    /*Phone icon/caption pair*/
+#call-to-action-bar li:nth-of-type(1){
+ 	position: absolute;
+ 	left: 4%;}
+
+ 	/*Tree icon/caption pair*/
+#call-to-action-bar li:nth-of-type(3){
+ 	position:absolute;
+ 	left: 37%;}
+
+
+/*Calendar icon/caption pair*/
+ #call-to-action-bar li:nth-of-type(4){
+ 	position: absolute;
+ 	left: 68%;}
+
+ 	/***Remove the Clipboard icon/caption pair and replace it with a Get a Free quote link
+        in the off canvas menu*/
+        
+        /*Clipboard icon/caption pair*/
+ #call-to-action-bar li:nth-of-type(2){
+    display: none;}
+
+
+
+	
+    /*Initially conceal the Get a quote link in the Off canvas menu*/
+    #menu li:nth-of-type(6){
+    	display: none;}
+
+
+
+/*Remove circular borders from icons*/
+#call-to-action-bar a{
+border: none!important;}
+		
+/*Aligning the corresponding icon and captions relative to one another*/
+
+/*Phone icon*/
+#call-to-action-phone{
+		position: relative;
+		right: 3px;}
+
+ /*Clipboard Caption*/
+#clipboard-icon-caption{
+		position: relative;
+		right: 14px;}
+
+
+
+/*Calendar Icon*/		
+#call-to-action-book-appointment{
+        	position: relative;
+        	left: 20px;}
+
+/*Tree icon Caption*/
+#tree-icon-caption{
+     	position: relative;
+     	right: 6px;}
+     
+        
+
+
+/***Remove the Clipboard icon/caption pair and replace it with a Get a Free quote link
+        in the off canvas menu*/
+        
+        /*Clipboard icon/caption pair*/
+ #call-to-action-bar li:nth-of-type(2){
+    display: none;}
+
+
+
+	
+    /*Initially conceal the Get a quote link in the Off canvas menu*/
+    #menu li:nth-of-type(6){
+    	display: none;}
+    
+
+@media only screen and (min-width: 293px){
+
+/***Remove the Clipboard icon/caption pair and replace it with a Get a Free quote link
+        in the off canvas menu*/
+        
+        /*Clipboard icon/caption pair*/
+ #call-to-action-bar li:nth-of-type(2){
+    display: none;}
+
+        /*Get a free quote link in the off canvas menu*/
+        #menu li:nth-of-type(6){
+        	display:block;}
+        
+	
+    /*Phone icon/caption pair*/
+#call-to-action-bar li:nth-of-type(1){
+ 	position: absolute;
+ 	left: 4%;}
+
+ 	/*Tree icon/caption pair*/
+#call-to-action-bar li:nth-of-type(3){
+ 	position:absolute;
+ 	left: 37%;}
+
+
+/*Calendar icon/caption pair*/
+ #call-to-action-bar li:nth-of-type(4){
+ 	position: absolute;
+ 	left: 68%;}
+
+
+}
+
+
+ 
+@media only screen and (min-width: 293px) and (max-width: 332px){
+        /***Remove the Clipboard icon/caption pair and replace it with a Get a Free quote link
+        in the off canvas menu*/
+        
+        /*Clipboard icon/caption pair*/
+ #call-to-action-bar li:nth-of-type(2){
+    display: none;}
+
+        /*Get a free quote link in the off canvas menu*/
+        #menu li:nth-of-type(6){
+        	display:block;}
+        
+	
+    /*Phone icon/caption pair*/
+#call-to-action-bar li:nth-of-type(1){
+ 	position: absolute;
+ 	left: 6%;}
+
+ 	/*Tree icon/caption pair*/
+#call-to-action-bar li:nth-of-type(3){
+ 	position:absolute;
+ 	left: 39%;}
+
+
+/*Calendar icon/caption pair*/
+ #call-to-action-bar li:nth-of-type(4){
+ 	position: absolute;
+ 	left: 70%;}
+
+}
+
+
+
+@media only screen and (min-width: 333px) and (max-width: 344px){
+
+/*Phone icon/caption pair*/
+#call-to-action-bar li:nth-of-type(1){
+ 	position: absolute;
+ 	left: 5%;}
+
+
+
+
+  /*Clipboard icon/caption pair*/
+ #call-to-action-bar li:nth-of-type(2){
+    position: absolute;
+    left: 26%;}
+ 	
+
+
+/*Tree icon/caption pair*/
+#call-to-action-bar li:nth-of-type(3){
+ 	position:absolute;
+ 	left: 53%;}
+
+
+        /*Calendar icon/caption pair*/
+ #call-to-action-bar li:nth-of-type(4){
+ 	position: absolute;
+ 	left: 73%;}
+ 
+
+}
+
+
+@media only screen and (min-width: 345px) and (max-width: 479px){
+
+/*****Positioning of the icon/caption pairs  489*/
+
+/*Phone icon/caption pair*/
+#call-to-action-bar li:nth-of-type(1){
+ 	position: absolute;
+ 	left: 5%;}
+
+
+ /*Clipboard icon/caption pair*/
+ #call-to-action-bar li:nth-of-type(2){
+    position: absolute;
+    left: 26%;}
+ 	
+ 	
+ 
+/*Tree icon/caption pair*/
+#call-to-action-bar li:nth-of-type(3){
+ 	position:absolute;
+ 	left: 54%;}
+
+/*Calendar icon/caption pair*/
+ #call-to-action-bar li:nth-of-type(4){
+ 	position: absolute;
+ 	left: 75%;}
+ 
+            }
+
+
+
+
+
+
+
+
+
+
+/*****Responsiveness of the company name header*/
+
+@media only screen and (max-width: 280px){
+.site-logo a{
+    position: relative;
+    left: -4%;
+    z-index: 5;
+    display: block;
+    color: white;
+    font-size: calc(1.35em - .3vw);
+    height: 40px;
+    top: 10px;
+    border-width: 1px;
+    border-style:;
+    width: 120%;}
+	
+}
+
+
+
+
+ @media only screen and (min-width: 280px) and (max-width: 296px) {
+
+/*Company name*/
+.site-logo a{
+    position: relative;
+    left: -4%;
+    z-index: 5;
+    display: block;
+    color: white;
+    font-size: calc(1.35em - .3vw);
+    height: 40px;
+    top: 10px;
+    border-width: 1px;
+    border-style:;
+    width: 120%;}
+
+
+
+
+ } 
+
+
+
+
+ @media only screen and (min-width: 296px) and (max-width: 320px){
+
+/*Company name*/
+.site-logo a{
+    position: relative;
+    left: 2%;
+    z-index: 5;
+    display: block;
+    color: white;
+    font-size: calc(1.4em - .3vw);
+    height: 40px;
+    top: 10px;
+    border-width: 1px;
+    border-style:;
+    width: 120%;}
+
+
+
+ }
+
+
+
+
+    
+ @media only screen and (min-width: 320px) and (max-width: 365px){
+
+/*Company name*/
+.site-logo a{
+    position: relative;
+    left: 3%;
+    z-index: 5;
+    display: block;
+    color: white;
+    font-size: calc(1.4em + .3vw);
+    height: 40px;
+    top: 10px;
+    border-width: 1px;
+    border-style:;
+    width: 120%;}
+
+
+
+
+ 	
+ }
+
+
+   
+@media only screen and (min-width: 365px) and  (max-width: 407px){
+
+
+ /*Company name*/
+.site-logo a{
+    position: relative;
+    left: 7%;
+    z-index: 5;
+    display: block;
+    color: white;
+    font-size: calc(1.5em + .5vw);
+    height: 40px;
+    top: 10px;
+    border-width: 1px;
+    border-style:;
+    width: 100%;}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 407px) and (max-width: 479px){
+
+
+	
+ /*Company name*/
+.site-logo a{
+    position: relative;
+    left: 7%;
+    z-index: 18 !important;
+    display: block;
+    color: white;
+    font-size: calc(1.5em + 1.2vw);
+    height: 40px;
+    top: 10px;
+    border-width: 1px;
+    border-style: ;
+    width: 100%;}
+
+   
+
+
+	
+
+}     
+    
+	
+   
+     
+
+

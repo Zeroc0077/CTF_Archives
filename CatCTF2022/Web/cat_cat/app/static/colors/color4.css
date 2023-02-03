@@ -1,0 +1,86 @@
+a, .text-primary, .btn-primary .badge, .btn-link,a.list-group-item.active > .badge,.nav-pills > .active > a > .badge, p.drop-caps:first-child:first-letter, .accent-color, .nav-np .next:hover, .nav-np .prev:hover, .basic-link, .pagination > li > a:hover,.pagination > li > span:hover,.pagination > li > a:focus,.pagination > li > span:focus, .icon-box-inline span, .pricing-column h3, .post .post-title a:hover, a, .post-actions .comment-count a:hover, .pricing-column .features a:hover, a:hover, .list-group-item a:hover, .icon-box.ibox-plain .ibox-icon i,.icon-box.ibox-plain .ibox-icon img, .icon-box.ibox-border .ibox-icon i,.icon-box.ibox-border .ibox-icon img, address strong, ul.checks > li > i, ul.angles > li > i, ul.carets > li > i, ul.chevrons > li > i, ul.icons > li > i, .widget li .meta-data a:hover, .sort-source li.active a, .header-info-cols li .icon-col, .feature-block .icon, hr.sm:before, .connected-blocks .icon, .service-grid-item h4 a:hover, .blog-list-item h4 a:hover, .owl-carousel .blog-list-item .meta-data i, .footer-menu li a:hover, .megamenu-sub-title i, .dd-menu .megamenu-container ul li a:hover, .widget_categories ul li a:hover, .widget_archive ul li a:hover, .widget_recent_entries ul li a:hover, .widget_recent_entries ul li a:hover, .widget_recent_comments ul li a:hover, .widget_links ul li a:hover, .widget_meta ul li a:hover, .widget.recent_posts ul li h5 a:hover, .testimonial-block blockquote:before, .footer_widget h4.widgettitle i, .fact-ico, .testimonial-info span, blockquote:before, .page-header.dark .breadcrumb li, .widget_custom_menu ul li.active a, .team-grid-item .meta-data, .page-header .breadcrumb a:hover, .project-list-item .project-title a:hover, .blog-list-item .blog-title a:hover, .blog-grid-item .blog-title a:hover{
+	color:#37BC9B;
+}
+p.drop-caps.secondary:first-child:first-letter, .accent-bg, .btn-primary,
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus,
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus,
+.label-primary,
+.progress-bar-primary,
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus,
+.panel-primary > .panel-heading, .carousel-indicators .active, .flex-control-nav a:hover, .flex-control-nav a.flex-active, .media-box .media-box-wrapper, .icon-box.icon-box-style1:hover .ico, .ibox-effect.ibox-dark .ibox-icon i:hover,.ibox-effect.ibox-dark:hover .ibox-icon i,.ibox-border.ibox-effect.ibox-dark .ibox-icon i:after, .icon-box .ibox-icon i,.icon-box .ibox-icon img, .icon-box .ibox-icon i,.icon-box .ibox-icon img, .icon-box.ibox-dark.ibox-outline:hover .ibox-icon i, .pricing-column.highlight h3, #back-to-top:hover, .widget_donations, .fblock-image-overlay, .overlay-accent, .page-banner, .tag-cloud a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, .accordion-heading .accordion-toggle.active, .site-logo, .site-logo:before, .stacked-title, .feature-block:hover .icon, .blog-list-item .date, .blog-grid-item .date, .header-style3 .topbar, blockquote:after, .bootstrap-select.btn-group .dropdown-menu li.selected, .bootstrap-select.btn-group .dropdown-menu li.selected a, .media-box .zoom .icon, #menu-toggle:active, #menu-toggle:hover{
+  background-color: #37BC9B;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary{
+  background: #37BC9B;
+  opacity:.9
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus,
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus,
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active,
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus,
+.panel-primary,
+.panel-primary > .panel-heading, .btn-primary.btn-transparent, .icon-box.icon-box-style1 .ico, .icon-box-inline span, .icon-box.ibox-border .ibox-icon, .icon-box.ibox-outline .ibox-icon, .icon-box.ibox-dark.ibox-outline:hover .ibox-icon, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, .header-info-cols li .icon-col, .feature-block:hover .icon, .owl-theme .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span, .tag-cloud a:hover{
+	border-color:#37BC9B;
+}
+.panel-primary > .panel-heading + .panel-collapse .panel-body, .dd-menu > li:hover ul, .dd-menu > li > ul li ul{
+	border-top-color:#37BC9B;
+}
+.widget_custom_menu ul li.active a{
+	border-left-color:#37BC9B;
+}
+.panel-primary > .panel-footer + .panel-collapse .panel-body, .feature-block:hover{
+	border-bottom-color:#37BC9B;
+}
+.ibox-border.ibox-effect.ibox-dark .ibox-icon i:hover,.ibox-border.ibox-effect.ibox-dark:hover .ibox-icon i {
+	box-shadow:0 0 0 1px #37BC9B;
+}
+.ibox-effect.ibox-dark .ibox-icon i:after {
+	box-shadow:0 0 0 2px #37BC9B;
+}
+@media only screen and (max-width: 992px){
+	.dd-menu > li:hover > a{
+  		background: #37BC9B;
+	}
+}

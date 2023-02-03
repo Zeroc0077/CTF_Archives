@@ -1,0 +1,875 @@
+
+
+html,body{
+	font-size: 100%;
+	 height: 100%; 
+}
+
+#site-logo-parent,.site-logo{
+height: ;
+
+}
+.site-logo{
+	height: 4rem;
+}
+
+
+/*Company name header link*/
+.site-logo a{
+    position: relative;
+    right: 7%;
+    z-index: 5;
+    display: block;
+    color: white;
+    font-size: 1.01em;
+    height: 93%;
+    /*height: 12.5vh;*/
+    /*height: 62.5%;*/
+    padding-top: 8%;
+    
+    
+    width: 125%;}
+	
+
+	/*Make the Quick Links at the bottom green*/
+	.footer_widget nav ul li a{
+	color: #9ABC31!important;}
+
+	/*Container for the bottom section*/
+	#Footer-body{
+		/* margin-bottom: -20px; */
+	}
+	
+
+/****Call to Action BAr of ICONS for the Mobile views****/
+
+
+	/*Container for the call to action bar*/
+#main-nav-menu {
+    position: fixed;
+    bottom: 0%;
+    z-index: 6;
+    background-color: white;
+    border-style: solid;
+    border-width: .416%;
+    height: 18.75%;
+    width: 100%;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;}
+    
+	
+	
+ /* Flex Container for the call to action bar. The row consists of the four
+     icon/caption pairs
+     */
+	#call-to-action-bar{
+	list-style: none;
+    position: relative;
+    right: 3%;
+    bottom: 9.5%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    height: 100%;
+    border-style: solid;
+    border-color: green;
+    border-width: 1px;}
+	
+	
+	
+/*call-to action bar's secondary child flex containers. Here, each list item within <ul id="call-to-action-bar"> is an 
+ individual flex container, with the corresponding icon and caption as the flex items*/
+
+ #call-to-action-bar li{
+ 	display: flex;
+ 	flex-direction: column;
+ 	flex: 1;
+ 	  font-size: .84em;
+ 	  height: 100%;}
+
+ 	
+	
+	/*Remove circular borders from icons*/
+#call-to-action-bar a{border: none!important;}
+		
+
+/****Icon/Caption Pairs within the Call to Action Bar****/
+
+  /*Phone icon/caption pair*/
+#call-to-action-bar li:nth-of-type(1){
+ 	position: absolute;
+ 	left: 8%;
+ 	 height: 4em;}
+
+ 	/*Tree icon/caption pair*/
+#call-to-action-bar li:nth-of-type(3){
+ 	position:absolute;
+ 	left: 41%;}
+
+
+/*Calendar icon/caption pair*/
+ #call-to-action-bar li:nth-of-type(4){
+ 	position: absolute;
+ 	left: 71.2%;}
+     
+       
+       /*Clipboard icon/caption pair*/
+ #call-to-action-bar li:nth-of-type(2){
+ 	/***Remove the Clipboard 
+		icon/caption pair
+         and replace it with a
+         Get a Free quote link
+        in the off canvas menu*/
+    display: none;}
+	
+	
+	/*Get a quote link in the Off canvas menu*/
+    #menu li:nth-of-type(6){
+    	display: block;}
+
+
+/****Icons within the Call to Action Bar****/
+
+/*Phone icon*/
+#call-to-action-phone{
+		position: relative;
+		right: 11%;
+		top: 5%;}
+
+/*Tree icon*/
+#call-to-action-services-page{
+	position: relative;
+	top: 10%;}
+
+/*Tree Icon's size*/
+#call-to-action-services-page .fa-tree{
+	font-size: .93em!important;}
+
+
+/*Calendar Icon*/		
+#call-to-action-book-appointment{
+        	position: relative;
+        	left: 20%;
+        	top:10%;}
+
+
+/*Calendar Icon'size*/
+ #call-to-action-book-appointment .fa-calendar-check{
+ 	font-size: .93em!important;}
+ 
+
+/****Captions beneath the Icons of Call to Action Bar****/
+
+
+ /*Clipboard Caption*/
+#clipboard-icon-caption{
+		position: relative;
+		right: !0%;}
+		
+
+
+/*Tree icon Caption*/
+#tree-icon-caption{
+     	position: relative;
+     	right: 10%;}
+
+
+/****Font size for Icons****/
+
+
+.fa,.fas{
+ 		font-size: .85em!important;}
+ 	
+
+
+
+
+/****Off-canvas Hamburger Menu****/
+
+
+ 	
+/*This rule set establishes the positiong and formatting context of
+ the Hamburger Icon on the phone's screen*/
+#menuToggle{z-index:4; 
+position: absolute; 
+top: 0%;
+right: 0%;
+color:yellow;
+background: white;
+}
+
+/*This rule set configures the size dimensions of the off canvas menu;
+Configures  it movement "off-screen" when the Hamburger Icon is clicked */
+#menu
+{
+  position: absolute;
+  top: -5vh;
+  left: 8.33vw;
+  width: 60vw;
+  height: 80vh;
+  box-shadow: 0 0 4.16vw #85888C;
+  padding: 20.83vw;
+  padding-right: 0vw;
+  padding-left: 0vw;
+  padding-top: 10.42vw;
+  background-color: #F5F6FA;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  /*This declaration initially pushes the menu leftward so that it appears "offscreen"*/
+  transform: translate(10%, 0);
+  /*This declaration is responsible for the menu swiftly sliding into view as oppose to just rapidly materializing when the icon is clicked*/
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+}
+
+
+/*this rukle set creates the horizontal lines of the <span> elements 
+that are to constitue the Hamburger Icon.In addition the 
+'transition' property
+ of this rule set is responsible for the way the Hamburger*/
+#menuToggle span
+{
+  display: flex;
+  width: 1.8rem;
+  height: .125rem;
+  /*margin-bottom: 1.5625vh;*/
+  margin-bottom: .34rem;
+  position: relative;
+  right: 6.25vw;
+  /*top: 9.375vh;*/
+  /*right: 15px;*/
+  top: 30px;
+  /*background: #ffffff;*/
+  background-color: #9ABC31;
+  border-radius: 10.35%;
+  z-index: 3;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+
+
+/*This rule set targets the "invisible" checkbox behind 
+the Hamburger Icon.Particulary, it is through the opacity 
+property that the checkbox is concealed
+*/
+#menuToggle input
+{
+  display: flex;
+  width: 4.17vw;
+  height: 3.75vh;
+  right: 10.417vw;
+  top: 7.8125vh;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*This rule set is responsible for  altering the three line Hamburger Icon 
+into an "X" shaped button when the icon is clicked*/
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: #36383F;
+}
+
+
+/*This rule set essentially obscures the third line of the Hamburger Icon as
+the "X" shaped button is created with the other two lines*/
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*The list of links in the Off canvas menu*/
+#menu li
+  {padding: 3.5% 0;
+  transition-delay: 2s;
+  position: relative;
+  left: 10%;
+  width: 70%;
+  border-color: black;
+  border-style: solid;
+  border-width: 0px;}
+
+
+/*This rule set is responsible format bringing the off-canvas menu 
+into view when the Hamburger Icon is clicked on*/
+
+#menuToggle input:checked ~ ul
+{transform: none;
+  transform: translate(-100%, 0);}
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+/****Carousel****/
+/*Animation code for the Carousel*/
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+/*
+body {
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  font-family: 'Lato', sans-serif;
+}*/
+
+/*Univeral stylings*/
+
+
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*This rules targets the conatiner for the entire Carousel*/
+.carousel {
+  position: relative;
+  /*padding-top: 75%;*/
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+  height: 66.875%;
+  }
+
+
+/*This rules targets the conatiner for the  Carousel images*/
+.carousel__viewport {
+  position:absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  height: 63.875vh;
+  height: 17.43rem;
+  /*height: 214px;*/
+  position: relative;
+  margin-bottom: 0px;
+  max-height: 400px;}
+
+
+/*Common stylings for the slides withun the Carousel*/
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+ /* background-color: #f99;*/
+  /*counter-increment: item;*/
+}
+
+.carousel__slide:nth-child(even) {
+  /*background-color: #99f;*/
+}
+
+
+
+.carousel__slide:before {
+ /* content: counter(item);*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-40%,70px);
+  color: #fff;
+  font-size: 2em;
+}
+
+/*Stylings for the Containers of the Carousel buttons*/
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+/*The default configuring of the Carousel button's functioning via animation properties*/
+@media all {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+/* Removal of Carousel button's functioning for certain User agents*/
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+/*Halts motion of Carousel when use clicks, taps, or hovers over a slide*/
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+
+/*Both Carousel buttons.Note that the psuedoelements 
+  produce the triangular icons.The __prev and __next 
+  are the buttons per se*/
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 0%;
+  margin-top: 37.5%;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;}
+
+/*The left Carousel navigation button Note that the psuedoelement 
+ represents the white triangular icon*/
+.carousel::before,
+.carousel__prev {
+  left: .6rem;}
+  
+
+
+/*The right navigation button*/
+.carousel::after,
+.carousel__next {
+  right: .6rem;
+}
+
+/*Stylings for theTriangular arrows wihtin the Carousel buttons*/
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 1;
+  background-color: #333;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+
+/*Image Sourece for the Triangular arrows of the Carousel buttons*/
+.carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+
+
+
+
+
+/**** Carousel Images****/
+
+#carousel__slide1,#carousel__slide2,#carousel__slide3,#carousel__slide4{
+background-repeat: no-repeat;
+background-position: center 0%;
+background-size: 100% 62.5vh;}
+
+/*1st Carousel image*/
+#carousel__slide1{
+background-image: url("https://via.placeholder.com/240X200.jpg?text=First+Image");}
+
+/*2nd Carousel image*/
+#carousel__slide2{
+ background-image: url("https://via.placeholder.com/240X200.jpg?text=Second+Image");}
+
+
+/*3rd Carousel image*/
+#carousel__slide3{
+background-image: url("https://via.placeholder.com/240X200.jpg?text=Third+Image");} 
+
+/*4th Carousel image*/
+#carousel__slide4{
+background-image: url("https://via.placeholder.com/240X200.jpg?text=Fourth+Image");}
+
+@media only screen and (min-width: 265px){
+
+/*Calendar icon/caption pair*/
+ #call-to-action-bar li:nth-of-type(4){
+ 	position: absolute;
+ 	left: 73%;}
+
+/*Phone icon/caption pair*/
+#call-to-action-bar li:nth-of-type(1){
+ 	position: absolute;
+ 	left: 9%;
+ 	 height: 4em;}
+
+ 	/*Tree icon/caption pair*/
+#call-to-action-bar li:nth-of-type(3){
+ 	position:absolute;
+ 	left: 42%;}
+/*Company name header link*/
+.site-logo a{
+    position: relative;
+    right: 7%;
+    z-index: 5;
+    display: block;
+    color: white;
+    font-size: 1.2em;
+    height: 93%;
+    /*height: 12.5vh;*/
+    /*height: 62.5%;*/
+    padding-top: 8%;
+    
+    
+    width: 125%;}
+                }
+
+
+/*Add the clipboard Icon/caption pair when sufficient viewport width is available*/
+@media only screen and (min-width: 300px){
+
+	  /*Clipboard icon/caption pair
+ #call-to-action-bar li:nth-of-type(2){
+    display: flex;
+    position: absolute;
+    left: 54%;}
+*/
+
+
+
+ 	/*Tree icon/caption pair
+#call-to-action-bar li:nth-of-type(3){
+ 	position:absolute;
+ 	left: 30%;}
+	*/
+}
+
+
+/*Adjust the phone icon'caption pair's vertical position*/
+	@media only screen and (min-height: 325px){
+	
+		/*Phone icon/caption pair*/
+#call-to-action-bar li:nth-of-type(1){
+ 	position: absolute;
+ 	left: 9%;
+ 	top:5.5%;
+ 	 height: 4em;}
+
+	}
+
+
+
+
+
+@media only screen and (min-height: 366px){
+
+/*Phone icon/caption pair*/
+#call-to-action-bar li:nth-of-type(1){
+ 	position: absolute;
+ 	left: 9%;
+ 	top: 8%;
+ 	 height: 4em;}
+
+
+ 	/*Tree icon/caption pair*/
+#call-to-action-bar li:nth-of-type(3){
+ 	position:absolute;
+ 	top: 3%;
+ 	left: 42%;}
+
+ 	/*Tree icon*/
+#call-to-action-services-page{
+	position: relative;
+	top: 12%;}
+
+
+ 	/*Calendar icon/caption pair*/
+ #call-to-action-bar li:nth-of-type(4){
+ 	position: absolute;
+ 	top: 5%;
+ 	left: 73%;}
+
+ 	/*Calendar caption*/
+ 	#calendar-icon-caption{
+ 		position: relative;
+ 		bottom: 1.5%;
+ 	}
+
+
+ 		
+ /* Flex Container for the call to action bar. The row consists of the four
+     icon/caption pairs
+     */
+	#call-to-action-bar{
+	list-style: none;
+	position: relative;
+	right: 3%;
+	/* bottom: 6.5%; */
+	display: flex;
+	flex-direction: row;
+	margin-left: 0px;
+	height: 100%;
+	}
+
+
+
+
+}
+
+
+@media only screen and (min-height: 400px){
+
+	#carousel__slide1,#carousel__slide2,#carousel__slide3,#carousel__slide4{
+		background-size: 100% 15.875rem;
+		
+	}
+
+}
+
+
+@media only screen and (min-height: 431px){
+  
+   /*Size of phone icon*/
+  .fa-phone{
+    font-size: .95em!important;}
+     
+     /*Phone Caption text*/
+    #phone-icon-caption{
+    	font-size: 1.03rem;}
+    
+
+    
+/*Tree icon*/
+#call-to-action-services-page{
+	font-size: 2.20rem!important;}
+  
+  #tree-icon-caption{
+  	font-size: .95rem;
+  	top: 2%;}
+  
+
+
+/*Tree Icon/Caprtion pair*/ 
+ #call-to-action-bar li:nth-of-type(3){
+  	left: 40%;}
+  
+
+  #calendar-icon-caption{
+  	font-size: .95rem;
+  	top: 2%;}
+  
+  /*Calendar icon/caption pair*/
+  #call-to-action-bar li:nth-of-type(4){
+  	left: 71%;}
+  
+
+}
+
+@media only screen and (min-height: 465px){
+
+          /*Size of phone icon*/
+  .fa-phone{
+    font-size: 1.2em!important;}
+     
+     /*Phone Caption text*/
+    #phone-icon-caption{
+    	font-size: 1.2rem;
+    	position: relative;
+    	top: 15.5%!important;}
+
+   /*Phone Icon*/
+   #call-to-action-phone{
+   	right: 5%;
+   } 	
+
+    	    
+/*Tree icon*/
+#call-to-action-services-page{
+	font-size: 2.50rem!important;}
+  
+  #tree-icon-caption{
+  	font-size: 1.2rem;
+  	top: 15%;
+  	right: 20%;}
+
+
+/*Tree Icon/Caprtion pair*/ 
+ #call-to-action-bar li:nth-of-type(3){
+  	left: 36%;}
+
+  	 #calendar-icon-caption{
+  	font-size: 1.15rem;
+  	  	top: 15%;}
+  
+  /*Calendar icon/caption pair*/
+  #call-to-action-bar li:nth-of-type(4){
+  	left: 64%;}
+
+    /*Calendar Icon*/
+  	#call-to-action-book-appointment .fa-calendar-check{
+ 	font-size: 2.1rem!important;}
+    
+    /*Phone Icon/Caption pair*/
+ 	#call-to-action-bar li:nth-of-type(1){
+ 	position: absolute;
+ 	left: 6%;
+ 	 height: 4em;
+ 	 top:9%;}
+ 
+  
+
+}
+
+@media only screen and (min-height:566px){
+	 /*Phone Icon/Caption pair*/
+ 	#call-to-action-bar li:nth-of-type(1){
+ 	position: absolute;
+ 	left: 6%;
+ 	 height: 4em;
+ 	 top:12%;}
+
+
+/*Tree Icon/Caprtion pair*/ 
+ #call-to-action-bar li:nth-of-type(3){
+  	left: 36%;
+  	top:4%;}
+}
+

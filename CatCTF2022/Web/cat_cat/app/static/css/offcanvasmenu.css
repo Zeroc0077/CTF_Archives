@@ -1,0 +1,196 @@
+
+/*This rule set establishes the positiong and formatting context of
+ the Hamburger Icon on the phone's screen*/
+#menuToggle{z-index:4; 
+position: absolute; 
+top: 0px;
+right: 0px;
+color:yellow;
+background: white;}
+
+/*This rule set configures the size dimensions of the off canvas menu;
+Configures  it movement "off-screen" when the Hamburger Icon is clicked */
+#menu
+{
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 60vw;
+  height: 400px;
+  box-shadow: 0 0 10px #85888C;
+ /* margin: -20px 0 0 -50px;*/
+  padding: 50px;
+  padding-top: 25px;
+  background-color: #F5F6FA;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  /*This declaration initially pushes the menu leftward so that it appears "offscreen"*/
+  transform: translate(10%, 0);
+  /*This declaration is responsible for the menu swiftly sliding into view as oppose to just rapidly materializing when the icon is clicked*/
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+}
+
+
+/*this rukle set creates the horizontal lines of the <span> elements 
+that are to constitue the Hamburger Icon.In addition the 
+'transition' property
+ of this rule set is responsible for the way the Hamburger*/
+#menuToggle span
+{
+  display: flex;
+  width: 29px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  right: 15px;
+  top: 30px;
+  /*background: #ffffff;*/
+  background-color: #9ABC31;
+  border-radius: 3px;
+  z-index: 3;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+
+
+/*This rule set targets the "invisible" checkbox behind 
+the Hamburger Icon.Particulary, it is through the opacity 
+property that the checkbox is concealed
+*/
+#menuToggle input
+{
+  display: flex;
+  width: 10px;
+  height: 12px;
+  right: 25px;
+  top: 25px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*This rule set is responsible for  altering the three line Hamburger Icon 
+into an "X" shaped button when the icon is clicked*/
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: #36383F;
+}
+
+
+/*This rule set essentially obscures the third line of the Hamburger Icon as
+the "X" shaped button is created with the other two lines*/
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  transition-delay: 2s;
+}
+
+/*This rule set is responsible format bringing the off-canvas menu 
+into view when the Hamburger Icon is clicked on*/
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+  transform: translate(-100%, 0);
+  }
+
+
+
+@media only screen and (min-width: 280px){
+
+  #menu li a{
+  font-size: calc(1.5em - 1.6vw);}
+
+
+/*the "See our work", Free Quote and About Us links respectively*/
+#menu li:nth-child(3), #menu li:nth-child(6), #menu li:nth-child(2){
+  width: 160%;}
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 280px) and (max-width: 323px){
+
+#menu li a{
+  font-size: calc(1.3em - .2vw);}
+
+
+/*the "See our work", Free Quote and About Us links respectively*/
+#menu li:nth-child(3), #menu li:nth-child(6), #menu li:nth-child(2){
+  width: 170%;}
+
+
+
+}
+
+@media only screen and (min-width: 323px) and (max-width: 360px){
+/*links withint the off canvas menu*/
+
+#menu li a{
+  font-size: calc(1.4em + .2vw);}
+
+
+/*the "See our work link"*/
+#menu li:nth-child(3){
+  width: 150%;}
+  
+  
+}
+
+@media only screen and (min-width: 360px) and (max-width: 780px) {
+
+
+/*links withint the off canvas menu*/
+
+#menu li a{
+  font-size: calc(1.4em + .5vw);}
+
+
+/*the "See our work link"*/
+#menu li:nth-child(3){
+  width: 150%;}
+  
+  
+}
+
+
+
+  
+}
+
+
