@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app:
+    container_name: user-app
+    build:
+        context: .
+        dockerfile: Dockerfile
+    environment:
+      - PORT=3000
+      - HOST=0.0.0.0
+    ports:
+        - "3000:3000"
+    restart:
+        always
