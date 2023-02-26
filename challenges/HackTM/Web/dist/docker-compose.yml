@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  php:
+    restart: always
+    build: .
+    ports:
+      - "1337:80"

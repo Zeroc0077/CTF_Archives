@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>电子木鱼</title>
+    <link rel="stylesheet" href="asset/css/default.css">
+    <link rel="stylesheet" href="asset/css/index.css">
+</head>
+
+<body>
+    <div>
+        <div class="qiaoji">
+            <h2>当前功德: {{ gongde }}</h2>
+            {% if flag %}
+            <h2>功德无量，你比佛祖都nb：{{ flag }}</h2>
+            {% endif %}
+        </div>
+        <div class="muyu"><img src="asset/img/muyu.jpg"></div>
+    </div>
+</body>
+
+</html>

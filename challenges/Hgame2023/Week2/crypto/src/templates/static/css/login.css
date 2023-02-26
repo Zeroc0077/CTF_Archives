@@ -1,0 +1,57 @@
+body {
+    align-items: center;
+    /* 决定背景图像的位置是在视口内固定，或者随着包含它的区块滚动。 */
+    /* https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-attachment */
+    background: url("../img/ginshin.png") no-repeat fixed center;
+    background-size: cover;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+#bigBox
+{
+    margin: 200px auto 0;
+    padding: 20px 50px;
+    background-color: #00000680;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+    background-position: 100px 100px;
+}
+
+#bigBox h1
+{
+    color: white;
+}
+
+#bigBox .inputBox .inputText
+{
+    margin-top: 20px;
+}
+
+#bigBox .inputBox .inputText span
+{
+    color: white;
+}
+
+#bigBox .inputBox .inputText input
+{
+    border:0;
+    padding: 10px 10px;
+    border-bottom: 1px solid white;
+    background-color: #00000000;
+    color: white;
+}
+
+#bigBox .loginButton
+{
+    margin-top: 30px;
+    width: 150px;
+    height: 25px;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbbb 0%, #b465b4 0% );
+}

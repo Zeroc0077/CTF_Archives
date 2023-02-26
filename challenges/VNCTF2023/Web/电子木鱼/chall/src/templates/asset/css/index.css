@@ -1,0 +1,29 @@
+@media screen and (min-width: 531px) {
+  body {
+    background-color: black;
+    color: #fff;
+  }
+  .qiaoji {
+    margin-top: 5%;
+    width: 100%;
+    height: 25vh;
+    text-align: center;
+  }
+  .muyu {
+    width: 211px;
+    height: 211px;
+    margin: 0 auto;
+  }
+  .sf {
+    animation: suofang 0.3s;
+  }
+  .gongde {
+    position: absolute;
+    left: 60%;
+    top: 24%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 30px;
+    font-size: 21px;
+  }
+}

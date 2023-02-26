@@ -1,0 +1,42 @@
+; void __cdecl enc(char *p)
+.text:00401160 _enc            proc near               ; CODE XREF: _main+1B↑p
+.text:00401160
+.text:00401160 i               = dword ptr -4
+.text:00401160 Str             = dword ptr  8
+.text:00401160
+.text:00401160                 push    ebp
+.text:00401161                 mov     ebp, esp
+.text:00401163                 push    ecx
+.text:00401164                 mov     [ebp+i], 0
+.text:0040116B                 jmp     short loc_401176
+.text:0040116D ; ---------------------------------------------------------------------------
+.text:0040116D
+.text:0040116D loc_40116D:                             ; CODE XREF: _enc+3B↓j
+.text:0040116D                 mov     eax, [ebp+i]
+.text:00401170                 add     eax, 1
+.text:00401173                 mov     [ebp+i], eax
+.text:00401176
+.text:00401176 loc_401176:                             ; CODE XREF: _enc+B↑j
+.text:00401176                 mov     ecx, [ebp+Str]
+.text:00401179                 push    ecx             ; Str
+.text:0040117A                 call    _strlen
+.text:0040117F                 add     esp, 4
+.text:00401182                 cmp     [ebp+i], eax
+.text:00401185                 jge     short loc_40119D
+.text:00401187                 mov     edx, [ebp+Str]
+.text:0040118A                 add     edx, [ebp+i]
+.text:0040118D                 movsx   eax, byte ptr [edx]
+.text:00401190                 xor     eax, 33h
+.text:00401193                 mov     ecx, [ebp+Str]
+.text:00401196                 add     ecx, [ebp+i]
+.text:00401199                 mov     [ecx], al
+.text:0040119B                 jmp     short loc_40116D
+.text:0040119D ; ---------------------------------------------------------------------------
+.text:0040119D
+.text:0040119D loc_40119D:                             ; CODE XREF: _enc+25↑j
+.text:0040119D                 mov     esp, ebp
+.text:0040119F                 pop     ebp
+.text:004011A0                 retn
+.text:004011A0 _enc            endp
+Input: your flag
+Encrypted result: 0x5b,0x54,0x52,0x5e,0x56,0x48,0x44,0x56,0x5f,0x50,0x3,0x5e,0x56,0x6c,0x47,0x3,0x6c,0x41,0x56,0x6c,0x44,0x5c,0x41,0x2,0x57,0x12,0x4e

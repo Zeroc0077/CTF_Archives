@@ -1,0 +1,18 @@
+检测是否patch成功的部分代码：
+char to_stdin[73];
+for(int i=0;i<36;i++)
+{
+    to_stdin[i*2]='%';
+    to_stdin[i*2+1]='n';
+}
+to_stdin[72]='\n';
+to_stdin[73]='\0';
+write(writefd[1],to_stdin,74);
+char stdout_arr[300]={0};
+read(readfd[0],stdout_arr,300);
+to_stdin[23]='\0';
+
+if(strcmp(stdout_arr,to_stdin))
+{
+    printf("\nthere are still bugs...\n");
+}
